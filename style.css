@@ -1,10 +1,8 @@
 /* =========================================================
-   RESET
+   GLOBAL
 ========================================================= */
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -16,30 +14,41 @@ html {
 
 body {
 
-    font-family: "Quicksand", sans-serif;
+    margin: 0;
 
-    background: #ffffff;
+    font-family:
+        "Muli",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
 
-    color: #59636d;
+    font-size: 1rem;
 
-    font-size: 20px;
+    font-weight: 400;
 
     line-height: 1.5;
+
+    color: #6c757d;
+
+    background-color: #ffffff;
 }
 
 
 a {
+
     color: inherit;
+
+    text-decoration: none;
 }
 
 
+a:hover {
 
-/* =========================================================
-   PAGE
-========================================================= */
-
-.page-layout {
-    display: flex;
+    text-decoration: none;
 }
 
 
@@ -52,92 +61,110 @@ a {
 
     position: fixed;
 
-    left: 0;
     top: 0;
+    left: 0;
 
-    width: 335px;
+    width: 17rem;
+
     height: 100vh;
 
-    background: #a8bae4;
+    background-color: rgb(169, 183, 222);
 
     display: flex;
 
     flex-direction: column;
 
-    align-items: center;
-
     justify-content: center;
 
-    padding: 30px 20px;
+    align-items: center;
+
+    padding: 1rem;
+
+    z-index: 1000;
 }
 
 
 
 /* =========================================================
-   PHOTO
+   PROFILE IMAGE
 ========================================================= */
 
-.profile-image-wrapper {
+.profile-container {
 
-    width: 215px;
-    height: 215px;
+    width: 12rem;
 
-    padding: 9px;
+    height: 12rem;
 
     border-radius: 50%;
 
-    background: rgba(255,255,255,0.20);
+    padding: 0.5rem;
 
-    margin-bottom: 35px;
+    background-color: rgba(255, 255, 255, 0.18);
+
+    margin-bottom: 1.75rem;
 }
 
 
 .profile-image {
 
     width: 100%;
-    height: 100%;
 
-    border-radius: 50%;
+    height: 100%;
 
     object-fit: cover;
 
-    border: 5px solid rgba(255,255,255,0.55);
+    object-position: center;
+
+    border-radius: 50%;
+
+    border: 0.35rem solid rgba(255, 255, 255, 0.45);
+
+    display: block;
 }
 
 
 
 /* =========================================================
-   SIDEBAR LINKS
+   NAVIGATION
 ========================================================= */
 
-.sidebar-nav {
+.nav-links {
+
+    width: 100%;
 
     display: flex;
 
     flex-direction: column;
 
     align-items: center;
-
-    gap: 18px;
 }
 
 
-.sidebar-nav a {
+.nav-links a {
 
-    color: rgba(255,255,255,0.82);
+    display: block;
 
-    text-decoration: none;
+    padding: 0.42rem 0;
 
-    font-size: 17px;
+    color: rgba(255, 255, 255, 0.72);
 
-    font-weight: 700;
+    font-size: 0.95rem;
 
-    letter-spacing: 0.3px;
+    font-weight: 800;
+
+    letter-spacing: 0.04rem;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    transition: color 0.2s ease;
 }
 
 
-.sidebar-nav a:hover {
-    color: white;
+.nav-links a:hover {
+
+    color: #ffffff;
 }
 
 
@@ -148,9 +175,9 @@ a {
 
 .main-content {
 
-    margin-left: 335px;
+    margin-left: 17rem;
 
-    width: calc(100% - 335px);
+    width: calc(100% - 17rem);
 }
 
 
@@ -159,131 +186,195 @@ a {
    ALL SECTIONS
 ========================================================= */
 
-.section {
-
-    min-height: 100vh;
-
-    padding-left: 45px;
-
-    padding-right: 55px;
+.resume-section {
 
     display: flex;
 
-    flex-direction: column;
+    align-items: center;
 
-    justify-content: center;
+    min-height: 100vh;
 
-    border-bottom: 1px solid #eeeeee;
+    max-width: 75rem;
+
+    padding-top: 5rem;
+
+    padding-bottom: 5rem;
+
+    padding-left: 3rem;
+
+    padding-right: 3rem;
+}
+
+
+.resume-section-content {
+
+    width: 100%;
 }
 
 
 
 /* =========================================================
-   SECTION TITLES
-
-   NO SMALL SUBHEADING/LABEL ABOVE THEM
+   DIVIDER
 ========================================================= */
 
-.section-title {
+hr {
 
-    font-family: "Oswald", sans-serif;
+    margin: 0;
+
+    border: 0;
+
+    border-top:
+        1px solid
+        rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading {
+
+    font-family:
+        "Saira Extra Condensed",
+        sans-serif;
+
+    font-size: 3.5rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    text-transform: none;
 
     color: #343a40;
 
-    font-size: 58px;
+    margin-top: 0;
 
-    font-weight: 600;
-
-    line-height: 1;
-
-    margin: 0 0 68px 0;
+    margin-bottom: 3rem;
 }
 
 
 
 /* =========================================================
-   ABOUT
+   ABOUT NAME
 ========================================================= */
 
 .main-name {
 
-    font-family: "Oswald", sans-serif;
+    font-family:
+        "Saira Extra Condensed",
+        sans-serif;
 
-    font-size: clamp(75px, 7vw, 115px);
+    font-size: 6rem;
 
-    font-weight: 600;
+    font-weight: 700;
 
     line-height: 0.95;
 
-    margin-bottom: 20px;
+    margin-top: 0;
+
+    margin-bottom: 0.5rem;
 }
 
 
-.first-name {
+.name-dark {
+
     color: #343a40;
 }
 
 
-.last-name {
-    color: #a8bae4;
-}
+.name-blue {
 
-
-.top-email {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    margin-bottom: 58px;
-}
-
-
-.top-email a {
-
-    text-decoration: none;
-
-    color: #59636d;
-}
-
-
-.about-text {
-
-    max-width: 1200px;
-
-    font-size: 20px;
-}
-
-
-.about-text p {
-
-    margin-bottom: 29px;
+    color: rgb(169, 183, 222);
 }
 
 
 
 /* =========================================================
-   SOCIAL LINKS
+   ABOUT EMAIL
 ========================================================= */
 
-.social-links {
+.about-email {
 
     display: flex;
 
-    gap: 28px;
+    align-items: center;
 
-    margin-top: 25px;
+    gap: 0.45rem;
+
+    font-family:
+        "Saira Extra Condensed",
+        sans-serif;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 3.5rem;
 }
 
 
-.social-links a {
+.about-email i {
 
-    width: 66px;
-    height: 66px;
+    color: #6c757d;
+}
+
+
+.about-email a {
+
+    color: #6c757d;
+}
+
+
+
+/* =========================================================
+   ABOUT DESCRIPTION
+========================================================= */
+
+.about-description {
+
+    max-width: 72rem;
+
+    font-size: 1.1rem;
+
+    line-height: 1.7;
+}
+
+
+.about-description p {
+
+    margin-top: 0;
+
+    margin-bottom: 2rem;
+}
+
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.social-icons {
+
+    display: flex;
+
+    gap: 1.5rem;
+
+    margin-top: 2.5rem;
+}
+
+
+.social-icons a {
+
+    width: 4rem;
+
+    height: 4rem;
 
     border-radius: 50%;
+
+    background-color: #495057;
+
+    color: #ffffff;
 
     display: flex;
 
@@ -291,147 +382,189 @@ a {
 
     justify-content: center;
 
-    background: #50575d;
+    font-size: 1.4rem;
 
-    color: #ffffff;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
 
-    text-decoration: none;
 
-    font-size: 25px;
+.social-icons a:hover {
+
+    background-color:
+        rgb(169, 183, 222);
+
+    transform:
+        translateY(-2px);
 }
 
 
 
 /* =========================================================
-   EDUCATION
-
-   SPACING MATCHED TO YOUR REFERENCE:
-   university
-   degree
-   LARGE GAP
-   department
-   GPA
+   RESUME ITEM STRUCTURE
 ========================================================= */
 
-.education-entry {
+.resume-item {
 
-    margin-left: 0;
+    display: flex;
 
-    max-width: 1000px;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-bottom: 3rem;
 }
 
 
-.education-entry h3 {
+.resume-item:last-child {
 
-    font-family: "Oswald", sans-serif;
-
-    color: #30383f;
-
-    font-size: 34px;
-
-    font-weight: 500;
-
-    line-height: 1.1;
-
-    margin: 0 0 8px 0;
+    margin-bottom: 0;
 }
 
 
-.education-degree {
+.resume-item-main {
 
-    font-family: "Oswald", sans-serif;
+    flex-grow: 1;
 
-    color: #59636d;
-
-    font-size: 27px;
-
-    font-weight: 400;
-
-    line-height: 1.25;
-
-    margin: 0;
-}
-
-
-
-/*
-   THIS IS THE IMPORTANT GAP.
-
-   The reference has a visibly larger blank area
-   between Bachelor of Science and the department.
-*/
-
-.education-details {
-
-    margin-top: 31px;
-
-    color: #59636d;
-
-    font-size: 20px;
-
-    line-height: 1.5;
-}
-
-
-.education-details p {
-
-    margin: 0;
+    max-width: 58rem;
 }
 
 
 
 /* =========================================================
-   SIMPLE CONTENT STYLE
-
-   Publications, research, projects, awards and scholarships
-   deliberately avoid cards/subsection labels.
+   UNIVERSITY / PROJECT / RESEARCH TITLES
 ========================================================= */
 
-.simple-entry {
+.resume-item-main h3 {
 
-    max-width: 1100px;
+    font-family:
+        "Saira Extra Condensed",
+        sans-serif;
 
-    margin-bottom: 48px;
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    color: #343a40;
+
+    margin-top: 0;
+
+    margin-bottom: 0;
 }
 
 
-.simple-entry h3 {
 
-    font-family: "Oswald", sans-serif;
+/* =========================================================
+   SUBHEADING
 
-    color: #30383f;
+   Bachelor of Science, Processor Design, etc.
+========================================================= */
 
-    font-size: 31px;
+.subheading {
+
+    font-family:
+        "Saira Extra Condensed",
+        sans-serif;
+
+    font-size: 1.5rem;
 
     font-weight: 500;
 
     line-height: 1.2;
 
-    margin-bottom: 8px;
+    color: #6c757d;
+
+    margin-top: 0;
+
+    margin-bottom: 1rem;
 }
 
 
-.simple-entry p {
 
-    max-width: 1000px;
+/* =========================================================
+   DETAILS
+========================================================= */
 
-    margin: 0;
+.detail-block {
 
-    font-size: 20px;
+    font-family:
+        "Muli",
+        sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    color: #6c757d;
 }
 
 
-.project-entry a {
+.detail-block p {
+
+    margin-top: 0;
+
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* =========================================================
+   RIGHT-SIDE DATES
+========================================================= */
+
+.resume-date {
+
+    flex-shrink: 0;
+
+    padding-left: 2rem;
+
+    padding-top: 0.15rem;
+
+    color:
+        rgb(169, 183, 222);
+
+    font-family:
+        "Muli",
+        sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+
+    white-space: nowrap;
+
+    text-align: right;
+}
+
+
+
+/* =========================================================
+   PROJECT LINKS
+========================================================= */
+
+.text-link {
 
     display: inline-block;
 
-    margin-top: 10px;
+    margin-top: 0.5rem;
 
-    color: #7f95c7;
+    color:
+        rgb(140, 158, 207);
 
-    text-decoration: none;
+    font-weight: 800;
+}
 
-    font-weight: 600;
+
+.text-link:hover {
+
+    text-decoration: underline;
 }
 
 
@@ -440,101 +573,98 @@ a {
    CONTACT
 ========================================================= */
 
-.contact-simple {
+.contact-row {
 
-    font-size: 21px;
+    display: flex;
+
+    align-items: center;
+
+    gap: 1.25rem;
+
+    margin-bottom: 2rem;
 }
 
 
-.contact-simple p {
+.contact-row > i {
 
-    margin-bottom: 20px;
+    width: 3.3rem;
+
+    height: 3.3rem;
+
+    border-radius: 50%;
+
+    background-color: #495057;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 1.2rem;
+
+    flex-shrink: 0;
 }
 
 
-.contact-simple i {
+.contact-row h3 {
 
-    width: 32px;
+    font-family:
+        "Saira Extra Condensed",
+        sans-serif;
+
+    color: #343a40;
+
+    font-size: 1.7rem;
+
+    line-height: 1.1;
+
+    margin-top: 0;
+
+    margin-bottom: 0.15rem;
 }
 
 
-.contact-simple a {
+.contact-row a {
 
-    text-decoration: none;
+    color: #6c757d;
+
+    font-size: 1rem;
 }
 
 
+.contact-row a:hover {
 
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-
-    padding: 35px 45px;
-
-    font-size: 14px;
-
-    color: #8e9499;
-}
-
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1050px) {
-
-
-    .sidebar {
-
-        width: 275px;
-    }
-
-
-    .main-content {
-
-        margin-left: 275px;
-
-        width: calc(100% - 275px);
-    }
-
-
-    .profile-image-wrapper {
-
-        width: 170px;
-        height: 170px;
-    }
-
-
-    .section {
-
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
+    text-decoration: underline;
 }
 
 
 
 /* =========================================================
-   MOBILE
+   LARGE SCREEN
+
+   Keep content similar to reference rather than stretching
+   across the entire monitor.
 ========================================================= */
 
-@media (max-width: 800px) {
+@media (min-width: 1200px) {
 
+    .resume-section {
 
-    body {
-
-        font-size: 17px;
+        max-width: none;
     }
 
+}
 
-    .page-layout {
 
-        display: block;
-    }
+
+/* =========================================================
+   TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 991px) {
 
 
     .sidebar {
@@ -542,27 +672,38 @@ footer {
         position: relative;
 
         width: 100%;
+
         height: auto;
 
-        padding: 30px 20px;
+        padding: 1.5rem;
     }
 
 
-    .sidebar-nav {
+    .profile-container {
+
+        width: 9rem;
+
+        height: 9rem;
+
+        margin-bottom: 1.25rem;
+    }
+
+
+    .nav-links {
 
         flex-direction: row;
 
-        flex-wrap: wrap;
-
         justify-content: center;
 
-        gap: 12px 20px;
+        flex-wrap: wrap;
+
+        gap: 0.25rem 1rem;
     }
 
 
-    .sidebar-nav a {
+    .nav-links a {
 
-        font-size: 13px;
+        font-size: 0.8rem;
     }
 
 
@@ -574,46 +715,98 @@ footer {
     }
 
 
-    .section {
+    .resume-section {
 
         min-height: auto;
 
-        padding: 80px 7%;
+        padding-top: 5rem;
+
+        padding-bottom: 5rem;
+
+        padding-left: 2rem;
+
+        padding-right: 2rem;
     }
 
 
-    .section-title {
+    .main-name {
 
-        font-size: 46px;
+        font-size: 4.5rem;
+    }
 
-        margin-bottom: 55px;
+}
+
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+
+    .resume-section {
+
+        padding-left: 1rem;
+
+        padding-right: 1rem;
     }
 
 
-    .education-entry h3 {
+    .section-heading {
 
-        font-size: 29px;
+        font-size: 3rem;
+
+        margin-bottom: 3rem;
     }
 
 
-    .education-degree {
+    .resume-item {
 
-        font-size: 24px;
+        flex-direction: column;
     }
 
 
-    .education-details {
+    .resume-date {
 
-        font-size: 18px;
+        padding-left: 0;
 
-        margin-top: 29px;
+        padding-top: 1rem;
+
+        text-align: left;
     }
 
 
-    .first-name,
-    .last-name {
+    .resume-item-main h3 {
+
+        font-size: 1.8rem;
+    }
+
+
+    .subheading {
+
+        font-size: 1.35rem;
+    }
+
+
+    .main-name {
+
+        font-size: 3.8rem;
+    }
+
+
+    .name-dark,
+    .name-blue {
 
         display: block;
+    }
+
+
+    .about-email {
+
+        font-size: 1.3rem;
+
+        margin-bottom: 2.5rem;
     }
 
 }
