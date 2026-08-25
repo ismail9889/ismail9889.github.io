@@ -2,25 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
 
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="description"
           content="Research portfolio of Md Ismail Hossain">
 
-    <title>Md Ismail Hossain | Research Portfolio</title>
+    <meta name="author"
+          content="Md Ismail Hossain">
+
+    <title>Md Ismail Hossain</title>
 
 
-    <!-- Saira Extra Condensed -->
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
         rel="stylesheet"
         type="text/css">
 
-
-    <!-- Muli -->
     <link
         href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
         rel="stylesheet"
@@ -30,105 +38,217 @@
     <!-- Font Awesome -->
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Your CSS -->
+    <link
+        href="style.css"
+        rel="stylesheet">
 
 </head>
 
 
-<body>
+<body id="page-top">
 
 
-<!-- =========================================================
+<!-- ======================================================
      SIDEBAR
-========================================================= -->
+====================================================== -->
 
-<nav class="sidebar">
+<nav
+    class="navbar navbar-expand-lg navbar-dark fixed-top"
+    id="sideNav">
 
 
-    <!-- PROFILE PHOTO -->
+    <!-- MOBILE NAME -->
 
-    <div class="profile-container">
+    <a
+        class="navbar-brand"
+        href="#page-top">
 
-        <img
-            src="assets/images/profile.jpg"
-            alt="Md Ismail Hossain"
-            class="profile-image">
+        <span class="d-block d-lg-none">
+            Md Ismail Hossain
+        </span>
 
-    </div>
+
+        <!-- DESKTOP PHOTO -->
+
+        <span class="d-none d-lg-block">
+
+            <img
+                class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                src="assets/images/profile.jpg"
+                alt="Md Ismail Hossain">
+
+        </span>
+
+    </a>
+
+
+
+    <!-- MOBILE MENU BUTTON -->
+
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
 
 
 
     <!-- NAVIGATION -->
 
-    <div class="nav-links">
+    <div
+        class="collapse navbar-collapse"
+        id="navbarResponsive">
 
-        <a href="#about">
-            ABOUT
-        </a>
+        <ul class="navbar-nav">
 
-        <a href="#education">
-            EDUCATION
-        </a>
 
-        <a href="#publications">
-            PUBLICATIONS
-        </a>
+            <li class="nav-item">
 
-        <a href="#research">
-            RESEARCH EXPERIENCE
-        </a>
+                <a
+                    class="nav-link"
+                    href="#about">
 
-        <a href="#projects">
-            PROJECTS
-        </a>
+                    About
 
-        <a href="#awards">
-            AWARDS
-        </a>
+                </a>
 
-        <a href="#scholarships">
-            SCHOLARSHIPS
-        </a>
+            </li>
 
-        <a href="#contact">
-            CONTACT
-        </a>
+
+            <li class="nav-item">
+
+                <a
+                    class="nav-link"
+                    href="#education">
+
+                    Education
+
+                </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+                <a
+                    class="nav-link"
+                    href="#publications">
+
+                    Publications
+
+                </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+                <a
+                    class="nav-link"
+                    href="#research-experience">
+
+                    Research Experience
+
+                </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+                <a
+                    class="nav-link"
+                    href="#projects">
+
+                    Projects
+
+                </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+                <a
+                    class="nav-link"
+                    href="#awards">
+
+                    Awards
+
+                </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+                <a
+                    class="nav-link"
+                    href="#scholarships">
+
+                    Scholarships
+
+                </a>
+
+            </li>
+
+
+            <li class="nav-item">
+
+                <a
+                    class="nav-link"
+                    href="#contact">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+
+        </ul>
 
     </div>
-
 
 </nav>
 
 
 
-<!-- =========================================================
-     MAIN PAGE
-========================================================= -->
+<!-- ======================================================
+     PAGE CONTENT
+====================================================== -->
 
-<main class="main-content">
+<div class="container-fluid p-0">
 
 
 
-    <!-- =====================================================
+    <!-- ==================================================
          ABOUT
-    ====================================================== -->
+    =================================================== -->
 
-    <section class="resume-section" id="about">
+    <section
+        class="resume-section"
+        id="about">
 
         <div class="resume-section-content">
 
 
-            <h1 class="main-name">
+            <h1 class="mb-0">
 
-                <span class="name-dark">
-                    Md Ismail
-                </span>
+                Md Ismail
 
-                <span class="name-blue">
+                <span class="text-primary-custom">
                     Hossain
                 </span>
 
@@ -136,11 +256,9 @@
 
 
 
-            <!-- EMAIL -->
+            <div class="subheading mb-5">
 
-            <div class="about-email">
-
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fas fa-envelope"></i>
 
                 <a href="mailto:mihossain.eee@outlook.com">
 
@@ -152,26 +270,23 @@
 
 
 
-            <!-- ABOUT TEXT -->
+            <p class="lead mb-4">
 
-            <div class="about-description">
+                I am interested in efficient and secure computer
+                architectures, particularly specialized AI accelerators,
+                data movement and memory systems, hardware security,
+                and RISC-V microarchitecture.
 
-                <p>
-                    I am interested in efficient and secure computer
-                    architectures, particularly specialized AI accelerators,
-                    data movement and memory systems, hardware security,
-                    and RISC-V microarchitecture.
-                </p>
+            </p>
 
 
-                <p>
-                    My work focuses on understanding architectural bottlenecks
-                    through RTL design, functional verification, synthesis,
-                    implementation, timing analysis, and quantitative
-                    evaluation.
-                </p>
+            <p class="lead mb-5">
 
-            </div>
+                My work focuses on understanding architectural bottlenecks
+                through RTL design, functional verification, synthesis,
+                implementation, timing analysis, and quantitative evaluation.
+
+            </p>
 
 
 
@@ -180,35 +295,45 @@
             <div class="social-icons">
 
 
+                <!-- GITHUB -->
+
                 <a
+                    class="social-icon"
                     href="https://github.com/ismail9889"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="GitHub">
 
-                    <i class="fa-brands fa-github"></i>
+                    <i class="fab fa-github"></i>
 
                 </a>
 
 
 
+                <!-- LINKEDIN
+                     Replace # with your LinkedIn URL later -->
+
                 <a
+                    class="social-icon"
                     href="#"
-                    target="_blank"
                     title="LinkedIn">
 
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fab fa-linkedin-in"></i>
 
                 </a>
 
 
 
+                <!-- CV -->
+
                 <a
+                    class="social-icon"
                     href="cv/cv.pdf"
                     target="_blank"
+                    rel="noopener noreferrer"
                     title="CV">
 
-                    <i class="fa-solid fa-file-lines"></i>
+                    <i class="far fa-file-alt"></i>
 
                 </a>
 
@@ -221,67 +346,77 @@
     </section>
 
 
-    <hr>
+    <hr class="m-0">
 
 
 
-    <!-- =====================================================
+    <!-- ==================================================
          EDUCATION
-    ====================================================== -->
+    =================================================== -->
 
-    <section class="resume-section" id="education">
+    <section
+        class="resume-section"
+        id="education">
 
         <div class="resume-section-content">
 
 
-            <h2 class="section-heading">
+            <h2 class="mb-5">
                 Education
             </h2>
 
 
 
-            <div class="resume-item">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
                 <!-- LEFT -->
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
 
-                    <h3>
+                    <h3 class="mb-0">
+
                         American International University - Bangladesh
+
                     </h3>
 
 
-                    <div class="subheading">
+                    <div class="subheading mb-3">
 
                         Bachelor of Science
 
                     </div>
 
 
-                    <div class="detail-block">
+                    <div>
 
-                        <div>
-                            Electrical and Electronic Engineering
-                        </div>
-
-                        <div>
-                            CGPA: 3.81 / 4.00
-                        </div>
+                        Electrical and Electronic Engineering
 
                     </div>
+
+
+                    <p>
+
+                        CGPA: 3.81 / 4.00
+
+                    </p>
 
 
                 </div>
 
 
 
-                <!-- RIGHT DATE -->
+                <!-- RIGHT -->
 
-                <div class="resume-date">
+                <div class="flex-shrink-0">
 
-                    2021 – 2025
+                    <span class="text-primary-custom">
+
+                        2021 – 2025
+
+                    </span>
 
                 </div>
 
@@ -294,56 +429,44 @@
     </section>
 
 
-    <hr>
+    <hr class="m-0">
 
 
 
-    <!-- =====================================================
+    <!-- ==================================================
          PUBLICATIONS
-    ====================================================== -->
+    =================================================== -->
 
-    <section class="resume-section" id="publications">
+    <section
+        class="resume-section"
+        id="publications">
 
         <div class="resume-section-content">
 
 
-            <h2 class="section-heading">
+            <h2 class="mb-4">
                 Publications
             </h2>
 
 
 
-            <div class="resume-item">
+            <!--
+            Replace this block when you have publication information.
+            -->
 
 
-                <div class="resume-item-main">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
+                <div class="flex-grow-1">
 
-                    <h3>
-                        Publications and Research Manuscripts
-                    </h3>
+                    <p class="mb-0">
 
+                        Publications and manuscripts will be listed here.
 
-                    <div class="subheading">
-
-                        Research Output
-
-                    </div>
-
-
-                    <div class="detail-block">
-
-                        <div>
-                            Publications, manuscripts, preprints,
-                            posters, and other research outputs
-                            will be listed here.
-                        </div>
-
-                    </div>
-
+                    </p>
 
                 </div>
-
 
             </div>
 
@@ -353,51 +476,64 @@
     </section>
 
 
-    <hr>
+    <hr class="m-0">
 
 
 
-    <!-- =====================================================
+    <!-- ==================================================
          RESEARCH EXPERIENCE
-    ====================================================== -->
+    =================================================== -->
 
-    <section class="resume-section" id="research">
+    <section
+        class="resume-section"
+        id="research-experience">
 
         <div class="resume-section-content">
 
 
-            <h2 class="section-heading">
+            <h2 class="mb-5">
+
                 Research Experience
+
             </h2>
 
 
 
             <!-- RESEARCH 1 -->
 
-            <div class="resume-item">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
-                    <h3>
+
+                    <h3 class="mb-0">
+
                         AI Accelerator Architecture
+
                     </h3>
 
-                    <div class="subheading">
-                        RTL and FPGA Architecture
-                    </div>
 
-                    <div class="detail-block">
+                    <h4
+                        class="mb-0 fst-italic fs-5 fw-normal">
 
-                        Exploring accelerator architectures with emphasis
-                        on compute organization, data movement,
-                        scheduling, tiling, buffering, memory systems,
-                        and quantitative performance evaluation.
+                        Independent Computer Architecture Research
 
-                    </div>
+                    </h4>
+
+
+                    <p class="mb-1">
+
+                        Focused on RTL accelerator architecture,
+                        compute organization, data movement,
+                        buffering, scheduling, performance analysis,
+                        and architectural optimization.
+
+                    </p>
+
 
                 </div>
-
 
             </div>
 
@@ -405,30 +541,39 @@
 
             <!-- RESEARCH 2 -->
 
-            <div class="resume-item">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
-                    <h3>
+
+                    <h3 class="mb-0">
+
                         Computer Architecture
+
                     </h3>
 
-                    <div class="subheading">
+
+                    <h4
+                        class="mb-0 fst-italic fs-5 fw-normal">
+
                         Microarchitecture and Memory Systems
-                    </div>
 
-                    <div class="detail-block">
+                    </h4>
 
-                        Investigating processor microarchitecture,
-                        memory hierarchy, architectural bottlenecks,
-                        resource utilization, performance analysis,
-                        and hardware-software tradeoffs.
 
-                    </div>
+                    <p class="mb-1">
+
+                        Exploring microarchitectural bottlenecks,
+                        memory hierarchy, performance,
+                        resource utilization, and
+                        hardware-software tradeoffs.
+
+                    </p>
+
 
                 </div>
-
 
             </div>
 
@@ -436,30 +581,38 @@
 
             <!-- RESEARCH 3 -->
 
-            <div class="resume-item">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
-                    <h3>
+
+                    <h3 class="mb-0">
+
                         Hardware Security
+
                     </h3>
 
-                    <div class="subheading">
+
+                    <h4
+                        class="mb-0 fst-italic fs-5 fw-normal">
+
                         Secure Microarchitecture
-                    </div>
 
-                    <div class="detail-block">
+                    </h4>
 
-                        Exploring RTL-level hardware security,
+
+                    <p class="mb-1">
+
+                        Research interests include RTL-level security,
                         secure microarchitecture, trusted computing,
-                        side-channel-aware design, and architectural
-                        security mechanisms.
+                        and architectural security mechanisms.
 
-                    </div>
+                    </p>
+
 
                 </div>
-
 
             </div>
 
@@ -467,31 +620,39 @@
 
             <!-- RESEARCH 4 -->
 
-            <div class="resume-item">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
-                    <h3>
-                        RISC-V Microarchitecture
+
+                    <h3 class="mb-0">
+
+                        RISC-V
+
                     </h3>
 
-                    <div class="subheading">
-                        Processor Architecture
-                    </div>
 
-                    <div class="detail-block">
+                    <h4
+                        class="mb-0 fst-italic fs-5 fw-normal">
 
-                        Investigating processor pipelines,
-                        hazards, memory systems,
-                        accelerator integration,
-                        performance optimization,
-                        and security mechanisms.
+                        Processor Microarchitecture
 
-                    </div>
+                    </h4>
+
+
+                    <p class="mb-1">
+
+                        Interested in processor pipelines,
+                        memory systems, accelerator integration,
+                        performance analysis,
+                        and architectural security.
+
+                    </p>
+
 
                 </div>
-
 
             </div>
 
@@ -501,63 +662,77 @@
     </section>
 
 
-    <hr>
+    <hr class="m-0">
 
 
 
-    <!-- =====================================================
+    <!-- ==================================================
          PROJECTS
-    ====================================================== -->
+    =================================================== -->
 
-    <section class="resume-section" id="projects">
+    <section
+        class="resume-section"
+        id="projects">
 
         <div class="resume-section-content">
 
 
-            <h2 class="section-heading">
+            <h2 class="mb-5">
+
                 Projects
+
             </h2>
 
 
 
             <!-- SCALE-AI -->
 
-            <div class="resume-item">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
-                    <h3>
+
+                    <h3 class="mb-0">
+
                         SCALE-AI
+
                     </h3>
 
-                    <div class="subheading">
+
+                    <div class="subheading mb-2">
+
                         Scalable AI Accelerator
-                    </div>
-
-                    <div class="detail-block">
-
-                        <p>
-                            RTL accelerator architecture exploring
-                            scalable compute organization,
-                            data movement, buffering,
-                            scheduling, resource utilization,
-                            and performance optimization.
-                        </p>
-
-
-                        <a
-                            href="projects/scale-ai.html"
-                            class="text-link">
-
-                            View Project →
-
-                        </a>
 
                     </div>
+
+
+                    <p class="mb-2">
+
+                        RTL-based accelerator exploration focusing on
+                        scalable compute organization, data movement,
+                        buffering, scheduling, verification,
+                        synthesis, implementation, and quantitative
+                        evaluation.
+
+                    </p>
+
+
+                    <a
+                        class="project-link"
+                        href="projects/scale-ai.html">
+
+                        <i class="fas fa-file-alt"></i>
+
+                        <span class="ms-1">
+                            Project
+                        </span>
+
+                    </a>
+
 
                 </div>
-
 
             </div>
 
@@ -565,41 +740,50 @@
 
             <!-- FUSEBUF -->
 
-            <div class="resume-item">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
-                    <h3>
+
+                    <h3 class="mb-0">
+
                         FUSEBUF
+
                     </h3>
 
-                    <div class="subheading">
+
+                    <div class="subheading mb-2">
+
                         Fused-Layer Buffer Architecture
-                    </div>
-
-                    <div class="detail-block">
-
-                        <p>
-                            Architectural exploration of intermediate-data
-                            buffering, data reuse, memory traffic,
-                            fused neural-network execution,
-                            and architectural tradeoffs.
-                        </p>
-
-
-                        <a
-                            href="projects/fusebuf.html"
-                            class="text-link">
-
-                            View Project →
-
-                        </a>
 
                     </div>
+
+
+                    <p class="mb-2">
+
+                        Architectural exploration of intermediate-data
+                        buffering, data reuse, memory traffic,
+                        and fused execution.
+
+                    </p>
+
+
+                    <a
+                        class="project-link"
+                        href="projects/fusebuf.html">
+
+                        <i class="fas fa-file-alt"></i>
+
+                        <span class="ms-1">
+                            Project
+                        </span>
+
+                    </a>
+
 
                 </div>
-
 
             </div>
 
@@ -607,41 +791,50 @@
 
             <!-- HARDWARE SECURITY -->
 
-            <div class="resume-item">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
-                    <h3>
+
+                    <h3 class="mb-0">
+
                         Hardware Security
+
                     </h3>
 
-                    <div class="subheading">
+
+                    <div class="subheading mb-2">
+
                         Secure Hardware Architecture
-                    </div>
-
-                    <div class="detail-block">
-
-                        <p>
-                            RTL-level exploration of secure
-                            microarchitectural mechanisms,
-                            hardware-security techniques,
-                            and trusted-computing concepts.
-                        </p>
-
-
-                        <a
-                            href="projects/hardware-security.html"
-                            class="text-link">
-
-                            View Project →
-
-                        </a>
 
                     </div>
+
+
+                    <p class="mb-2">
+
+                        Hardware-security research direction focused
+                        on secure microarchitecture and RTL-level
+                        protection mechanisms.
+
+                    </p>
+
+
+                    <a
+                        class="project-link"
+                        href="projects/hardware-security.html">
+
+                        <i class="fas fa-file-alt"></i>
+
+                        <span class="ms-1">
+                            Project
+                        </span>
+
+                    </a>
+
 
                 </div>
-
 
             </div>
 
@@ -649,42 +842,51 @@
 
             <!-- RISC-V -->
 
-            <div class="resume-item">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
-                    <h3>
+
+                    <h3 class="mb-0">
+
                         RISC-V Microarchitecture
+
                     </h3>
 
-                    <div class="subheading">
+
+                    <div class="subheading mb-2">
+
                         Processor Design
-                    </div>
-
-                    <div class="detail-block">
-
-                        <p>
-                            Processor-design exploration involving
-                            pipelines, hazards, memory systems,
-                            performance optimization,
-                            accelerator integration,
-                            and security.
-                        </p>
-
-
-                        <a
-                            href="projects/risc-v.html"
-                            class="text-link">
-
-                            View Project →
-
-                        </a>
 
                     </div>
+
+
+                    <p class="mb-2">
+
+                        Processor-design exploration involving pipelines,
+                        hazards, memory organization,
+                        accelerator integration, performance,
+                        and security.
+
+                    </p>
+
+
+                    <a
+                        class="project-link"
+                        href="projects/risc-v.html">
+
+                        <i class="fas fa-file-alt"></i>
+
+                        <span class="ms-1">
+                            Project
+                        </span>
+
+                    </a>
+
 
                 </div>
-
 
             </div>
 
@@ -694,57 +896,45 @@
     </section>
 
 
-    <hr>
+    <hr class="m-0">
 
 
 
-    <!-- =====================================================
+    <!-- ==================================================
          AWARDS
-    ====================================================== -->
+    =================================================== -->
 
-    <section class="resume-section" id="awards">
+    <section
+        class="resume-section"
+        id="awards">
 
         <div class="resume-section-content">
 
 
-            <h2 class="section-heading">
+            <h2 class="mb-5">
+
                 Awards
+
             </h2>
 
 
 
-            <div class="resume-item">
+            <!--
+            When you give me your award information,
+            replace this item.
+            -->
+
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
+                    <p>
 
-                    <h3>
-                        Award Title
-                    </h3>
+                        Award information will be added here.
 
-
-                    <div class="subheading">
-
-                        Awarding Organization
-
-                    </div>
-
-
-                    <div class="detail-block">
-
-                        Award description will be added here.
-
-                    </div>
-
-
-                </div>
-
-
-
-                <div class="resume-date">
-
-                    YEAR
+                    </p>
 
                 </div>
 
@@ -757,57 +947,40 @@
     </section>
 
 
-    <hr>
+    <hr class="m-0">
 
 
 
-    <!-- =====================================================
+    <!-- ==================================================
          SCHOLARSHIPS
-    ====================================================== -->
+    =================================================== -->
 
-    <section class="resume-section" id="scholarships">
+    <section
+        class="resume-section"
+        id="scholarships">
 
         <div class="resume-section-content">
 
 
-            <h2 class="section-heading">
+            <h2 class="mb-5">
+
                 Scholarships
+
             </h2>
 
 
 
-            <div class="resume-item">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
-                <div class="resume-item-main">
+                <div class="flex-grow-1">
 
-
-                    <h3>
-                        Scholarship Title
-                    </h3>
-
-
-                    <div class="subheading">
-
-                        University / Organization
-
-                    </div>
-
-
-                    <div class="detail-block">
+                    <p>
 
                         Scholarship information will be added here.
 
-                    </div>
-
-
-                </div>
-
-
-
-                <div class="resume-date">
-
-                    YEAR
+                    </p>
 
                 </div>
 
@@ -820,44 +993,48 @@
     </section>
 
 
-    <hr>
+    <hr class="m-0">
 
 
 
-    <!-- =====================================================
+    <!-- ==================================================
          CONTACT
-    ====================================================== -->
+    =================================================== -->
 
-    <section class="resume-section" id="contact">
+    <section
+        class="resume-section"
+        id="contact">
 
         <div class="resume-section-content">
 
 
-            <h2 class="section-heading">
+            <h2 class="mb-5">
+
                 Contact
+
             </h2>
 
 
 
             <!-- EMAIL -->
 
-            <div class="contact-row">
+            <div class="contact-entry mb-4">
 
-                <i class="fa-solid fa-envelope"></i>
 
-                <div>
+                <h3 class="mb-1">
 
-                    <h3>
-                        Email
-                    </h3>
+                    Email
 
-                    <a href="mailto:mihossain.eee@outlook.com">
+                </h3>
 
-                        mihossain.eee@outlook.com
 
-                    </a>
+                <a
+                    href="mailto:mihossain.eee@outlook.com">
 
-                </div>
+                    mihossain.eee@outlook.com
+
+                </a>
+
 
             </div>
 
@@ -865,25 +1042,25 @@
 
             <!-- GITHUB -->
 
-            <div class="contact-row">
+            <div class="contact-entry mb-4">
 
-                <i class="fa-brands fa-github"></i>
 
-                <div>
+                <h3 class="mb-1">
 
-                    <h3>
-                        GitHub
-                    </h3>
+                    GitHub
 
-                    <a
-                        href="https://github.com/ismail9889"
-                        target="_blank">
+                </h3>
 
-                        github.com/ismail9889
 
-                    </a>
+                <a
+                    href="https://github.com/ismail9889"
+                    target="_blank"
+                    rel="noopener noreferrer">
 
-                </div>
+                    github.com/ismail9889
+
+                </a>
+
 
             </div>
 
@@ -891,23 +1068,22 @@
 
             <!-- LINKEDIN -->
 
-            <div class="contact-row">
+            <div class="contact-entry mb-4">
 
-                <i class="fa-brands fa-linkedin-in"></i>
 
-                <div>
+                <h3 class="mb-1">
 
-                    <h3>
-                        LinkedIn
-                    </h3>
+                    LinkedIn
 
-                    <a href="#">
+                </h3>
 
-                        LinkedIn Profile
 
-                    </a>
+                <p>
 
-                </div>
+                    Add LinkedIn profile URL here.
+
+                </p>
+
 
             </div>
 
@@ -917,8 +1093,42 @@
     </section>
 
 
+</div>
 
-</main>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- CLOSE MOBILE MENU AFTER CLICKING LINK -->
+
+<script>
+
+    document.querySelectorAll('#navbarResponsive .nav-link')
+        .forEach(function(link) {
+
+            link.addEventListener('click', function() {
+
+                const menu =
+                    document.getElementById('navbarResponsive');
+
+                if (menu.classList.contains('show')) {
+
+                    const collapse =
+                        bootstrap.Collapse.getOrCreateInstance(menu);
+
+                    collapse.hide();
+
+                }
+
+            });
+
+        });
+
+</script>
 
 
 </body>
