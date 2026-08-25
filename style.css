@@ -1,5 +1,5 @@
 /* =========================================================
-   GLOBAL
+   RESET
 ========================================================= */
 
 * {
@@ -16,19 +16,15 @@ html {
 
 body {
 
-    font-family:
-        "Segoe UI",
-        "Helvetica Neue",
-        Arial,
-        sans-serif;
+    font-family: "Quicksand", sans-serif;
 
     background: #ffffff;
 
-    color: #5d6670;
+    color: #59636d;
 
-    line-height: 1.65;
+    font-size: 20px;
 
-    font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -39,14 +35,11 @@ a {
 
 
 /* =========================================================
-   PAGE LAYOUT
+   PAGE
 ========================================================= */
 
 .page-layout {
-
     display: flex;
-
-    min-height: 100vh;
 }
 
 
@@ -59,11 +52,10 @@ a {
 
     position: fixed;
 
-    top: 0;
     left: 0;
+    top: 0;
 
     width: 335px;
-
     height: 100vh;
 
     background: #a8bae4;
@@ -72,58 +64,50 @@ a {
 
     flex-direction: column;
 
-    justify-content: center;
-
     align-items: center;
 
-    padding: 35px 25px;
+    justify-content: center;
 
-    z-index: 1000;
+    padding: 30px 20px;
 }
 
 
 
 /* =========================================================
-   PROFILE
+   PHOTO
 ========================================================= */
 
 .profile-image-wrapper {
 
     width: 215px;
-
     height: 215px;
+
+    padding: 9px;
 
     border-radius: 50%;
 
-    padding: 10px;
+    background: rgba(255,255,255,0.20);
 
-    background: rgba(255, 255, 255, 0.22);
-
-    margin-bottom: 34px;
+    margin-bottom: 35px;
 }
 
 
 .profile-image {
 
     width: 100%;
-
     height: 100%;
-
-    object-fit: cover;
-
-    object-position: center;
 
     border-radius: 50%;
 
-    border: 5px solid rgba(255, 255, 255, 0.55);
+    object-fit: cover;
 
-    display: block;
+    border: 5px solid rgba(255,255,255,0.55);
 }
 
 
 
 /* =========================================================
-   NAVIGATION
+   SIDEBAR LINKS
 ========================================================= */
 
 .sidebar-nav {
@@ -134,41 +118,32 @@ a {
 
     align-items: center;
 
-    gap: 19px;
-
-    width: 100%;
+    gap: 18px;
 }
 
 
 .sidebar-nav a {
 
-    color: rgba(255, 255, 255, 0.82);
-
-    font-size: 0.93rem;
-
-    font-weight: 750;
-
-    letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.82);
 
     text-decoration: none;
 
-    text-align: center;
+    font-size: 17px;
 
-    transition: 0.2s;
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
 }
 
 
 .sidebar-nav a:hover {
-
-    color: #ffffff;
-
-    transform: translateX(3px);
+    color: white;
 }
 
 
 
 /* =========================================================
-   MAIN
+   MAIN CONTENT
 ========================================================= */
 
 .main-content {
@@ -181,56 +156,47 @@ a {
 
 
 /* =========================================================
-   GENERAL SECTIONS
+   ALL SECTIONS
 ========================================================= */
 
 .section {
 
     min-height: 100vh;
 
-    padding: 90px 6.5%;
+    padding-left: 45px;
 
-    border-bottom: 1px solid #ededed;
+    padding-right: 55px;
 
     display: flex;
 
     flex-direction: column;
 
     justify-content: center;
+
+    border-bottom: 1px solid #eeeeee;
 }
 
 
-.section-heading {
 
-    margin-bottom: 45px;
-}
+/* =========================================================
+   SECTION TITLES
 
+   NO SMALL SUBHEADING/LABEL ABOVE THEM
+========================================================= */
 
-.section-label {
+.section-title {
 
-    color: #9caeda;
-
-    font-size: 0.77rem;
-
-    font-weight: 800;
-
-    letter-spacing: 2.1px;
-
-    margin-bottom: 8px;
-}
-
-
-.section h2 {
+    font-family: "Oswald", sans-serif;
 
     color: #343a40;
 
-    font-size: clamp(2.8rem, 4vw, 4rem);
+    font-size: 58px;
 
-    font-weight: 750;
+    font-weight: 600;
 
-    letter-spacing: -2px;
+    line-height: 1;
 
-    line-height: 1.1;
+    margin: 0 0 68px 0;
 }
 
 
@@ -239,42 +205,29 @@ a {
    ABOUT
 ========================================================= */
 
-.about-section {
-
-    justify-content: center;
-}
-
-
 .main-name {
 
-    font-size: clamp(4rem, 7.5vw, 7.3rem);
+    font-family: "Oswald", sans-serif;
 
-    font-weight: 800;
+    font-size: clamp(75px, 7vw, 115px);
 
-    letter-spacing: -5px;
+    font-weight: 600;
 
     line-height: 0.95;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 
 .first-name {
-
     color: #343a40;
 }
 
 
 .last-name {
-
-    color: #a9bae5;
+    color: #a8bae4;
 }
 
-
-
-/* =========================================================
-   EMAIL
-========================================================= */
 
 .top-email {
 
@@ -282,52 +235,31 @@ a {
 
     align-items: center;
 
-    gap: 9px;
+    gap: 8px;
 
-    margin-bottom: 55px;
-
-    font-size: 1.15rem;
-
-    color: #626b72;
+    margin-bottom: 58px;
 }
 
 
 .top-email a {
 
-    color: #626b72;
-
     text-decoration: none;
+
+    color: #59636d;
 }
 
-
-.top-email a:hover {
-
-    text-decoration: underline;
-
-    color: #33383d;
-}
-
-
-
-/* =========================================================
-   ABOUT TEXT
-========================================================= */
 
 .about-text {
 
-    max-width: 1100px;
+    max-width: 1200px;
 
-    font-size: 1.16rem;
-
-    color: #626b73;
-
-    line-height: 1.75;
+    font-size: 20px;
 }
 
 
 .about-text p {
 
-    margin-bottom: 25px;
+    margin-bottom: 29px;
 }
 
 
@@ -340,43 +272,32 @@ a {
 
     display: flex;
 
-    gap: 20px;
+    gap: 28px;
 
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 
 .social-links a {
 
-    width: 64px;
-
-    height: 64px;
+    width: 66px;
+    height: 66px;
 
     border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
 
     background: #50575d;
 
     color: #ffffff;
 
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    font-size: 1.45rem;
-
     text-decoration: none;
 
-    transition: 0.25s;
-}
-
-
-.social-links a:hover {
-
-    background: #a8bae4;
-
-    transform: translateY(-4px);
+    font-size: 25px;
 }
 
 
@@ -384,67 +305,71 @@ a {
 /* =========================================================
    EDUCATION
 
-   This section is intentionally styled simply to match
-   the academic portfolio reference.
+   SPACING MATCHED TO YOUR REFERENCE:
+   university
+   degree
+   LARGE GAP
+   department
+   GPA
 ========================================================= */
-
-.education-section {
-
-    justify-content: center;
-}
-
-
-.education-section .section-heading {
-
-    margin-bottom: 55px;
-}
-
 
 .education-entry {
 
-    max-width: 950px;
+    margin-left: 0;
+
+    max-width: 1000px;
 }
 
 
 .education-entry h3 {
 
-    margin: 0;
+    font-family: "Oswald", sans-serif;
 
-    color: #343a40;
+    color: #30383f;
 
-    font-size: 2rem;
+    font-size: 34px;
 
-    font-weight: 700;
+    font-weight: 500;
 
-    letter-spacing: -0.8px;
+    line-height: 1.1;
 
-    line-height: 1.2;
+    margin: 0 0 8px 0;
 }
 
 
 .education-degree {
 
-    margin-top: 5px;
+    font-family: "Oswald", sans-serif;
 
-    color: #5f6973;
+    color: #59636d;
 
-    font-size: 1.52rem;
+    font-size: 27px;
 
     font-weight: 400;
 
-    line-height: 1.35;
+    line-height: 1.25;
+
+    margin: 0;
 }
 
 
+
+/*
+   THIS IS THE IMPORTANT GAP.
+
+   The reference has a visibly larger blank area
+   between Bachelor of Science and the department.
+*/
+
 .education-details {
 
-    margin-top: 27px;
+    margin-top: 31px;
 
-    color: #616b75;
+    color: #59636d;
 
-    font-size: 1.16rem;
+    font-size: 20px;
 
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 
@@ -454,315 +379,59 @@ a {
 }
 
 
-.education-years {
-
-    margin-top: 15px;
-
-    color: #9aabd3;
-
-    font-size: 0.91rem;
-
-    font-weight: 650;
-}
-
-
 
 /* =========================================================
-   PUBLICATIONS
+   SIMPLE CONTENT STYLE
+
+   Publications, research, projects, awards and scholarships
+   deliberately avoid cards/subsection labels.
 ========================================================= */
 
-.publication-placeholder {
+.simple-entry {
 
-    display: flex;
+    max-width: 1100px;
 
-    align-items: flex-start;
-
-    gap: 25px;
-
-    max-width: 900px;
+    margin-bottom: 48px;
 }
 
 
-.publication-icon {
+.simple-entry h3 {
 
-    width: 56px;
+    font-family: "Oswald", sans-serif;
 
-    height: 56px;
+    color: #30383f;
 
-    border-radius: 50%;
+    font-size: 31px;
 
-    flex-shrink: 0;
+    font-weight: 500;
 
-    background: #a8bae4;
-
-    color: #ffffff;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 1.2rem;
-}
-
-
-.publication-placeholder h3 {
-
-    color: #343a40;
-
-    font-size: 1.42rem;
-
-    margin-bottom: 7px;
-}
-
-
-
-/* =========================================================
-   RESEARCH EXPERIENCE
-========================================================= */
-
-.research-item {
-
-    max-width: 1050px;
-
-    display: grid;
-
-    grid-template-columns: 72px 1fr;
-
-    gap: 25px;
-
-    margin-bottom: 40px;
-}
-
-
-.research-number {
-
-    color: #a0b2dd;
-
-    font-size: 1.6rem;
-
-    font-weight: 750;
-
-    border-right: 2px solid #e5e8ed;
-
-    padding-right: 19px;
-}
-
-
-.research-content h3 {
-
-    color: #343a40;
-
-    font-size: 1.43rem;
+    line-height: 1.2;
 
     margin-bottom: 8px;
 }
 
 
-.research-content p {
+.simple-entry p {
 
-    max-width: 850px;
+    max-width: 1000px;
 
-    color: #626b73;
+    margin: 0;
+
+    font-size: 20px;
 }
 
 
+.project-entry a {
 
-/* =========================================================
-   PROJECTS
-========================================================= */
+    display: inline-block;
 
-.project-grid {
+    margin-top: 10px;
 
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 24px;
-
-    max-width: 1120px;
-}
-
-
-.project-card {
-
-    border: 1px solid #e0e4e9;
-
-    background: #ffffff;
-
-    padding: 30px;
-
-    transition: 0.25s;
-}
-
-
-.project-card:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 15px 35px
-        rgba(30, 45, 70, 0.08);
-}
-
-
-.project-top {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    margin-bottom: 10px;
-}
-
-
-.project-category {
-
-    color: #91a5d5;
-
-    font-size: 0.71rem;
-
-    font-weight: 800;
-
-    letter-spacing: 1.4px;
-}
-
-
-.project-number {
-
-    color: #cdd4df;
-
-    font-size: 0.8rem;
-
-    font-weight: 800;
-}
-
-
-.project-card h3 {
-
-    color: #343a40;
-
-    font-size: 1.7rem;
-
-    margin-bottom: 12px;
-}
-
-
-.project-card p {
-
-    color: #626b73;
-
-    margin-bottom: 21px;
-}
-
-
-.project-tags {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 8px;
-
-    margin-bottom: 25px;
-}
-
-
-.project-tags span {
-
-    background: #f1f3f8;
-
-    color: #7081a2;
-
-    font-size: 0.72rem;
-
-    font-weight: 650;
-
-    padding: 4px 9px;
-}
-
-
-.project-link {
-
-    color: #738bc6;
-
-    font-size: 0.92rem;
-
-    font-weight: 700;
+    color: #7f95c7;
 
     text-decoration: none;
 
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
-}
-
-
-.project-link i {
-
-    transition: 0.2s;
-}
-
-
-.project-link:hover i {
-
-    transform: translateX(4px);
-}
-
-
-
-/* =========================================================
-   AWARDS / SCHOLARSHIPS
-========================================================= */
-
-.award-placeholder {
-
-    max-width: 900px;
-
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 25px;
-}
-
-
-.award-placeholder > i {
-
-    width: 56px;
-
-    height: 56px;
-
-    border-radius: 50%;
-
-    background: #a8bae4;
-
-    color: #ffffff;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    font-size: 1.2rem;
-}
-
-
-.award-placeholder h3 {
-
-    color: #343a40;
-
-    font-size: 1.4rem;
-
-    margin-bottom: 6px;
+    font-weight: 600;
 }
 
 
@@ -771,123 +440,27 @@ a {
    CONTACT
 ========================================================= */
 
-.contact-section {
+.contact-simple {
 
-    min-height: 85vh;
+    font-size: 21px;
 }
 
 
-.contact-intro {
+.contact-simple p {
 
-    max-width: 850px;
-
-    font-size: 1.13rem;
-
-    color: #626b73;
-
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 
-.contact-grid {
+.contact-simple i {
 
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 18px;
-
-    max-width: 950px;
+    width: 32px;
 }
 
 
-.contact-card {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 17px;
-
-    padding: 22px;
-
-    border: 1px solid #e1e5e9;
-
-    transition: 0.2s;
-}
-
-
-.contact-card:hover {
-
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 10px 25px
-        rgba(40, 50, 70, 0.07);
-}
-
-
-.contact-icon {
-
-    width: 50px;
-
-    height: 50px;
-
-    border-radius: 50%;
-
-    background: #a8bae4;
-
-    color: #ffffff;
-
-    flex-shrink: 0;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    font-size: 1.1rem;
-}
-
-
-.contact-info {
-
-    display: flex;
-
-    flex-direction: column;
-
-    min-width: 0;
-}
-
-
-.contact-info span {
-
-    color: #99a9ce;
-
-    font-size: 0.68rem;
-
-    font-weight: 800;
-
-    letter-spacing: 1.2px;
-}
-
-
-.contact-info a {
-
-    color: #454c53;
+.contact-simple a {
 
     text-decoration: none;
-
-    word-break: break-word;
-}
-
-
-.contact-info a:hover {
-
-    color: #7188c0;
-
-    text-decoration: underline;
 }
 
 
@@ -898,17 +471,11 @@ a {
 
 footer {
 
-    display: flex;
+    padding: 35px 45px;
 
-    justify-content: space-between;
+    font-size: 14px;
 
-    gap: 20px;
-
-    padding: 35px 6.5%;
-
-    color: #92979c;
-
-    font-size: 0.82rem;
+    color: #8e9499;
 }
 
 
@@ -922,35 +489,29 @@ footer {
 
     .sidebar {
 
-        width: 270px;
+        width: 275px;
     }
 
 
     .main-content {
 
-        margin-left: 270px;
+        margin-left: 275px;
 
-        width: calc(100% - 270px);
+        width: calc(100% - 275px);
     }
 
 
     .profile-image-wrapper {
 
-        width: 165px;
-
-        height: 165px;
+        width: 170px;
+        height: 170px;
     }
 
 
-    .project-grid {
+    .section {
 
-        grid-template-columns: 1fr;
-    }
-
-
-    .contact-grid {
-
-        grid-template-columns: 1fr;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
 }
@@ -964,6 +525,12 @@ footer {
 @media (max-width: 800px) {
 
 
+    body {
+
+        font-size: 17px;
+    }
+
+
     .page-layout {
 
         display: block;
@@ -975,20 +542,9 @@ footer {
         position: relative;
 
         width: 100%;
-
         height: auto;
 
         padding: 30px 20px;
-    }
-
-
-    .profile-image-wrapper {
-
-        width: 145px;
-
-        height: 145px;
-
-        margin-bottom: 22px;
     }
 
 
@@ -1000,13 +556,13 @@ footer {
 
         justify-content: center;
 
-        gap: 12px 18px;
+        gap: 12px 20px;
     }
 
 
     .sidebar-nav a {
 
-        font-size: 0.75rem;
+        font-size: 13px;
     }
 
 
@@ -1022,15 +578,35 @@ footer {
 
         min-height: auto;
 
-        padding: 75px 7%;
+        padding: 80px 7%;
     }
 
 
-    .main-name {
+    .section-title {
 
-        font-size: 3.8rem;
+        font-size: 46px;
 
-        letter-spacing: -3px;
+        margin-bottom: 55px;
+    }
+
+
+    .education-entry h3 {
+
+        font-size: 29px;
+    }
+
+
+    .education-degree {
+
+        font-size: 24px;
+    }
+
+
+    .education-details {
+
+        font-size: 18px;
+
+        margin-top: 29px;
     }
 
 
@@ -1038,100 +614,6 @@ footer {
     .last-name {
 
         display: block;
-    }
-
-
-    .education-entry h3 {
-
-        font-size: 1.7rem;
-    }
-
-
-    .education-degree {
-
-        font-size: 1.3rem;
-    }
-
-
-    .research-item {
-
-        grid-template-columns: 55px 1fr;
-
-        gap: 15px;
-    }
-
-
-    .project-grid {
-
-        grid-template-columns: 1fr;
-    }
-
-
-    .contact-grid {
-
-        grid-template-columns: 1fr;
-    }
-
-
-    footer {
-
-        flex-direction: column;
-    }
-
-}
-
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-
-    .section {
-
-        padding-left: 6%;
-
-        padding-right: 6%;
-    }
-
-
-    .main-name {
-
-        font-size: 3rem;
-
-        letter-spacing: -2px;
-    }
-
-
-    .about-text {
-
-        font-size: 1rem;
-    }
-
-
-    .research-item {
-
-        grid-template-columns: 1fr;
-    }
-
-
-    .research-number {
-
-        border-right: none;
-
-        border-bottom: 2px solid #e5e8ed;
-
-        width: fit-content;
-
-        padding-right: 0;
-    }
-
-
-    .project-card {
-
-        padding: 23px;
     }
 
 }
