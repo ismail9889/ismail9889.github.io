@@ -5,232 +5,299 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Md Ismail Hossain | Computer Architecture Research</title>
+    <title>Md Ismail Hossain | Research Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         HERO / INTRODUCTION
-    ========================== -->
-    <header class="hero">
+<div class="layout">
 
-        <nav>
-            <div class="logo">Md Ismail Hossain</div>
+    <!-- =========================================
+         LEFT SIDEBAR
+    ========================================== -->
 
-            <div class="nav-links">
-                <a href="#research">Research</a>
-                <a href="#projects">Projects</a>
-                <a href="cv/cv.pdf">CV</a>
-                <a href="https://github.com/ismail9889">
-                    GitHub
-                </a>
-            </div>
-        </nav>
+    <aside class="sidebar">
 
-
-        <div class="hero-content">
-
-            <p class="intro">Hello, I am</p>
-
-            <h1>Md Ismail Hossain</h1>
-
-            <h2>
-                Computer Architecture · AI Accelerators ·
-                Hardware Security · RISC-V
-            </h2>
-
-            <p class="hero-description">
-                I am interested in designing efficient and secure
-                computing systems through RTL development,
-                architectural exploration, and quantitative evaluation.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#research" class="button primary">
-                    Research
-                </a>
-
-                <a href="#projects" class="button">
-                    Projects
-                </a>
-
-                <a href="cv/cv.pdf" class="button">
-                    CV
-                </a>
-
-                <a href="https://github.com/YOUR-GITHUB-USERNAME"
-                   class="button">
-                    GitHub
-                </a>
-
-            </div>
-
+        <div class="profile-image-container">
+            <img src="assets/images/profile.jpg"
+                 alt="Profile photograph"
+                 class="profile-image">
         </div>
 
-    </header>
+        <nav class="sidebar-nav">
+
+            <a href="#about">ABOUT</a>
+
+            <a href="#education">EDUCATION</a>
+
+            <a href="#publications">PUBLICATIONS</a>
+
+            <a href="#research">RESEARCH EXPERIENCE</a>
+
+            <a href="#projects">PROJECTS</a>
+
+            <a href="#scholarships">SCHOLARSHIPS</a>
+
+            <a href="#contact">CONTACT</a>
+
+        </nav>
+
+    </aside>
 
 
-    <main>
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
 
-        <!-- =========================
-             ABOUT / RESEARCH STATEMENT
-        ========================== -->
-
-        <section id="research">
-
-            <p class="section-label">RESEARCH</p>
-
-            <h2>Research Statement</h2>
-
-            <p class="research-statement">
-                I am interested in efficient and secure computer
-                architectures, particularly specialized AI accelerators,
-                data movement and memory systems, hardware security,
-                and RISC-V microarchitecture. My work focuses on
-                understanding architectural bottlenecks through RTL
-                design, verification, synthesis, implementation,
-                and quantitative evaluation.
-            </p>
-
-        </section>
+    <main class="main-content">
 
 
-        <!-- =========================
-             RESEARCH INTERESTS
-        ========================== -->
+        <!-- =====================================
+             ABOUT
+        ====================================== -->
 
-        <section>
+        <section id="about" class="section hero-section">
 
-            <p class="section-label">INTERESTS</p>
+            <h1>
+                <span class="first-name">YOUR</span>
+                <span class="last-name">NAME</span>
+            </h1>
 
-            <h2>Research Interests</h2>
+            <div class="email">
 
-            <div class="research-grid">
+                <i class="fa-solid fa-envelope"></i>
 
-                <article class="research-card">
+                <a href="mailto:your@email.com">
+                    your@email.com
+                </a>
 
-                    <h3>AI Accelerators</h3>
-
-                    <ul>
-                        <li>Tiling</li>
-                        <li>Data reuse</li>
-                        <li>Scheduling</li>
-                        <li>Memory systems</li>
-                        <li>Systolic architectures</li>
-                    </ul>
-
-                </article>
+            </div>
 
 
-                <article class="research-card">
+            <div class="about-text">
 
-                    <h3>Computer Architecture</h3>
+                <p>
+                    I am interested in efficient and secure computer
+                    architectures, particularly specialized AI accelerators,
+                    data movement and memory systems, hardware security,
+                    and RISC-V microarchitecture.
+                </p>
 
-                    <ul>
-                        <li>Microarchitecture</li>
-                        <li>Memory hierarchy</li>
-                        <li>Performance analysis</li>
-                        <li>Hardware/software tradeoffs</li>
-                    </ul>
+                <p>
+                    My work focuses on understanding architectural
+                    bottlenecks through RTL design, functional verification,
+                    synthesis, implementation, timing analysis, and
+                    quantitative architectural evaluation.
+                </p>
 
-                </article>
-
-
-                <article class="research-card">
-
-                    <h3>Hardware Security</h3>
-
-                    <ul>
-                        <li>Secure microarchitecture</li>
-                        <li>Side-channel security</li>
-                        <li>RTL security</li>
-                        <li>Trusted computing</li>
-                    </ul>
-
-                </article>
+            </div>
 
 
-                <article class="research-card">
+            <div class="social-links">
 
-                    <h3>RISC-V</h3>
+                <a href="https://github.com/ismail9889"
+                   target="_blank"
+                   aria-label="GitHub">
 
-                    <ul>
-                        <li>Pipeline design</li>
-                        <li>Microarchitecture</li>
-                        <li>Accelerator integration</li>
-                        <li>Security mechanisms</li>
-                    </ul>
+                    <i class="fa-brands fa-github"></i>
 
-                </article>
+                </a>
+
+
+                <a href="#"
+                   target="_blank"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+
+                <a href="cv/cv.pdf"
+                   target="_blank"
+                   aria-label="CV">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                </a>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
+        <!-- =====================================
+             EDUCATION
+        ====================================== -->
+
+        <section id="education" class="section">
+
+            <h2>Education</h2>
+
+            <div class="timeline-item">
+
+                <h3>Your University</h3>
+
+                <p class="degree">
+                    Your Degree
+                </p>
+
+                <p class="date">
+                    YEAR – YEAR
+                </p>
+
+                <p>
+                    Add your relevant academic background,
+                    specialization, thesis, or significant coursework here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PUBLICATIONS
+        ====================================== -->
+
+        <section id="publications" class="section">
+
+            <h2>Publications</h2>
+
+            <div class="empty-message">
+
+                <p>
+                    Publications and research manuscripts will be
+                    listed here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             RESEARCH EXPERIENCE
+        ====================================== -->
+
+        <section id="research" class="section">
+
+            <h2>Research Experience</h2>
+
+
+            <div class="research-item">
+
+                <h3>AI Accelerator Architecture</h3>
+
+                <p>
+                    Exploring scalable accelerator architectures,
+                    data reuse, scheduling, buffering, memory movement,
+                    RTL implementation, and quantitative performance
+                    evaluation.
+                </p>
+
+            </div>
+
+
+            <div class="research-item">
+
+                <h3>Computer Architecture</h3>
+
+                <p>
+                    Investigating microarchitectural design,
+                    memory hierarchy, performance bottlenecks,
+                    hardware/software tradeoffs, and architectural
+                    optimization.
+                </p>
+
+            </div>
+
+
+            <div class="research-item">
+
+                <h3>Hardware Security</h3>
+
+                <p>
+                    Exploring secure microarchitecture,
+                    RTL-level security mechanisms, trusted computing,
+                    and hardware security techniques.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
              PROJECTS
-        ========================== -->
+        ====================================== -->
 
-        <section id="projects">
-
-            <p class="section-label">PROJECTS</p>
+        <section id="projects" class="section">
 
             <h2>Selected Projects</h2>
 
-            <div class="projects-grid">
 
-                <article class="project">
+            <div class="project-grid">
 
-                    <p class="project-type">
+
+                <article class="project-card">
+
+                    <span class="project-category">
                         AI ACCELERATOR
-                    </p>
+                    </span>
 
                     <h3>SCALE-AI</h3>
 
                     <p>
-                        Scalable RTL accelerator exploring compute
-                        organization, data movement, buffering,
-                        scheduling, and performance optimization.
+                        Scalable accelerator architecture exploring
+                        compute organization, buffering, data movement,
+                        scheduling, and architectural optimization.
                     </p>
 
                     <a href="projects/scale-ai.html">
-                        View project →
+                        View Project →
                     </a>
 
                 </article>
 
 
-                <article class="project">
 
-                    <p class="project-type">
-                        MEMORY SYSTEMS
-                    </p>
+                <article class="project-card">
+
+                    <span class="project-category">
+                        DATA MOVEMENT
+                    </span>
 
                     <h3>FUSEBUF</h3>
 
                     <p>
-                        Experimental architecture investigating
-                        intermediate-data reuse and buffering for
-                        fused neural-network execution.
+                        Architectural exploration of intermediate-data
+                        buffering and reuse for fused neural-network
+                        workloads.
                     </p>
 
                     <a href="projects/fusebuf.html">
-                        View project →
+                        View Project →
                     </a>
 
                 </article>
 
 
-                <article class="project">
 
-                    <p class="project-type">
+                <article class="project-card">
+
+                    <span class="project-category">
                         HARDWARE SECURITY
-                    </p>
+                    </span>
 
                     <h3>Hardware Security</h3>
 
@@ -241,54 +308,152 @@
                     </p>
 
                     <a href="projects/hardware-security.html">
-                        View project →
+                        View Project →
                     </a>
 
                 </article>
 
 
-                <article class="project">
 
-                    <p class="project-type">
+                <article class="project-card">
+
+                    <span class="project-category">
                         PROCESSOR DESIGN
-                    </p>
+                    </span>
 
-                    <h3>RISC-V Microarchitecture</h3>
+                    <h3>RISC-V</h3>
 
                     <p>
-                        Progressive RISC-V processor design exploring
-                        pipelines, hazards, memory systems,
-                        performance, and security mechanisms.
+                        Processor microarchitecture exploring pipelines,
+                        hazards, memory systems, performance, and
+                        security mechanisms.
                     </p>
 
                     <a href="projects/risc-v.html">
-                        View project →
+                        View Project →
                     </a>
 
                 </article>
+
 
             </div>
 
         </section>
 
+
+
+        <!-- =====================================
+             SCHOLARSHIPS
+        ====================================== -->
+
+        <section id="scholarships" class="section">
+
+            <h2>Scholarships & Awards</h2>
+
+            <p>
+                Academic scholarships, distinctions, awards,
+                and research recognition can be listed here.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CONTACT
+        ====================================== -->
+
+        <section id="contact" class="section">
+
+            <h2>Contact</h2>
+
+            <p class="contact-intro">
+                I am interested in research opportunities and
+                discussions related to computer architecture,
+                AI accelerators, hardware security, and RISC-V systems.
+            </p>
+
+
+            <div class="contact-list">
+
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <span>Email</span>
+
+                        <a href="mailto:your@email.com">
+                            your@email.com
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="contact-item">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <div>
+
+                        <span>GitHub</span>
+
+                        <a href="https://github.com/ismail9889"
+                           target="_blank">
+
+                            github.com/ismail9889
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="contact-item">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                    <div>
+
+                        <span>LinkedIn</span>
+
+                        <a href="#"
+                           target="_blank">
+
+                            LinkedIn Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <footer>
+
+            <p>
+                © 2026 YOUR NAME
+            </p>
+
+        </footer>
+
+
     </main>
 
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <p>
-            © 2026 YOUR NAME
-        </p>
-
-        <p>
-            Built with HTML & CSS · Hosted on GitHub Pages
-        </p>
-
-    </footer>
+</div>
 
 </body>
 
