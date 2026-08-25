@@ -1,10 +1,10 @@
 /* ==========================================================
-   EXACT REFERENCE-STYLE VISUAL SYSTEM
+   PORTFOLIO STYLE
 ========================================================== */
 
 
 /* ==========================================================
-   ROOT / GLOBAL
+   ROOT COLORS
 ========================================================== */
 
 :root {
@@ -23,6 +23,11 @@
 
 }
 
+
+
+/* ==========================================================
+   GLOBAL
+========================================================== */
 
 html {
 
@@ -60,6 +65,7 @@ body {
         #ffffff;
 
 }
+
 
 
 /* ==========================================================
@@ -193,7 +199,7 @@ p {
 
 
 /* ==========================================================
-   PRIMARY COLOR
+   BLUE ACCENT
 ========================================================== */
 
 .text-primary-custom {
@@ -228,7 +234,10 @@ p {
 }
 
 
-#sideNav .navbar-nav .nav-item .nav-link {
+#sideNav
+.navbar-nav
+.nav-item
+.nav-link {
 
     font-weight: 800;
 
@@ -242,8 +251,14 @@ p {
 }
 
 
-#sideNav .navbar-nav .nav-item .nav-link:hover,
-#sideNav .navbar-nav .nav-item .nav-link:focus {
+#sideNav
+.navbar-nav
+.nav-item
+.nav-link:hover,
+#sideNav
+.navbar-nav
+.nav-item
+.nav-link:focus {
 
     color:
         rgba(255, 255, 255, 1);
@@ -251,7 +266,8 @@ p {
 }
 
 
-#sideNav .navbar-toggler {
+#sideNav
+.navbar-toggler {
 
     border-color:
         rgba(255, 255, 255, 0.45);
@@ -264,7 +280,8 @@ p {
    PROFILE PHOTO
 ========================================================== */
 
-#sideNav .img-profile {
+#sideNav
+.img-profile {
 
     width: 10rem;
 
@@ -315,7 +332,7 @@ section.resume-section
 
 
 /* ==========================================================
-   DIVIDERS
+   SECTION DIVIDERS
 ========================================================== */
 
 hr {
@@ -371,7 +388,8 @@ hr:not([size]) {
     margin-right: 1.5rem;
 
     transition:
-        background-color 0.15s ease-in-out;
+        background-color 0.15s ease-in-out,
+        transform 0.15s ease-in-out;
 
 }
 
@@ -385,37 +403,8 @@ hr:not([size]) {
     color:
         #ffffff;
 
-}
-
-
-
-/* ==========================================================
-   PROJECT LINKS
-========================================================== */
-
-.project-link {
-
-    font-weight: 800;
-
-}
-
-
-.project-link:hover {
-
-    color:
-        #6579ad;
-
-}
-
-
-
-/* ==========================================================
-   CONTACT
-========================================================== */
-
-.contact-entry a {
-
-    font-size: 1.05rem;
+    transform:
+        translateY(-2px);
 
 }
 
@@ -619,7 +608,7 @@ hr:not([size]) {
 
 
 /* ==========================================================
-   MOBILE
+   MOBILE / TABLET
 ========================================================== */
 
 @media
