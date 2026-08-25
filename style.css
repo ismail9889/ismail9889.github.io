@@ -1,18 +1,39 @@
-/* =========================================================
-   GLOBAL
-========================================================= */
+/* ==========================================================
+   EXACT REFERENCE-STYLE VISUAL SYSTEM
+========================================================== */
 
-* {
-    box-sizing: border-box;
+
+/* ==========================================================
+   ROOT / GLOBAL
+========================================================== */
+
+:root {
+
+    --portfolio-blue:
+        rgb(169, 183, 222);
+
+    --portfolio-dark:
+        #343a40;
+
+    --portfolio-gray:
+        #6c757d;
+
+    --portfolio-link:
+        #000000;
+
 }
 
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
 
 body {
+
+    padding-top: 3.375rem;
 
     margin: 0;
 
@@ -32,781 +53,648 @@ body {
 
     line-height: 1.5;
 
-    color: #6c757d;
+    color:
+        var(--portfolio-gray);
 
-    background-color: #ffffff;
+    background-color:
+        #ffffff;
+
 }
 
 
+/* ==========================================================
+   LINKS
+========================================================== */
+
 a {
 
-    color: inherit;
+    color:
+        var(--portfolio-link);
 
     text-decoration: none;
+
 }
 
 
 a:hover {
 
+    color:
+        #6579ad;
+
     text-decoration: none;
+
 }
 
 
 
-/* =========================================================
-   SIDEBAR
-========================================================= */
-
-.sidebar {
-
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    width: 17rem;
-
-    height: 100vh;
-
-    background-color: rgb(169, 183, 222);
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    padding: 1rem;
-
-    z-index: 1000;
-}
-
-
-
-/* =========================================================
-   PROFILE IMAGE
-========================================================= */
-
-.profile-container {
-
-    width: 12rem;
-
-    height: 12rem;
-
-    border-radius: 50%;
-
-    padding: 0.5rem;
-
-    background-color: rgba(255, 255, 255, 0.18);
-
-    margin-bottom: 1.75rem;
-}
-
-
-.profile-image {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    object-position: center;
-
-    border-radius: 50%;
-
-    border: 0.35rem solid rgba(255, 255, 255, 0.45);
-
-    display: block;
-}
-
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-.nav-links {
-
-    width: 100%;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-}
-
-
-.nav-links a {
-
-    display: block;
-
-    padding: 0.42rem 0;
-
-    color: rgba(255, 255, 255, 0.72);
-
-    font-size: 0.95rem;
-
-    font-weight: 800;
-
-    letter-spacing: 0.04rem;
-
-    text-align: center;
-
-    text-transform: uppercase;
-
-    transition: color 0.2s ease;
-}
-
-
-.nav-links a:hover {
-
-    color: #ffffff;
-}
-
-
-
-/* =========================================================
-   MAIN CONTENT
-========================================================= */
-
-.main-content {
-
-    margin-left: 17rem;
-
-    width: calc(100% - 17rem);
-}
-
-
-
-/* =========================================================
-   ALL SECTIONS
-========================================================= */
-
-.resume-section {
-
-    display: flex;
-
-    align-items: center;
-
-    min-height: 100vh;
-
-    max-width: 75rem;
-
-    padding-top: 5rem;
-
-    padding-bottom: 5rem;
-
-    padding-left: 3rem;
-
-    padding-right: 3rem;
-}
-
-
-.resume-section-content {
-
-    width: 100%;
-}
-
-
-
-/* =========================================================
-   DIVIDER
-========================================================= */
-
-hr {
-
-    margin: 0;
-
-    border: 0;
-
-    border-top:
-        1px solid
-        rgba(0, 0, 0, 0.12);
-}
-
-
-
-/* =========================================================
-   SECTION HEADINGS
-========================================================= */
-
-.section-heading {
-
-    font-family:
-        "Saira Extra Condensed",
-        sans-serif;
-
-    font-size: 3.5rem;
-
-    font-weight: 700;
-
-    line-height: 1.2;
-
-    text-transform: none;
-
-    color: #343a40;
-
-    margin-top: 0;
-
-    margin-bottom: 3rem;
-}
-
-
-
-/* =========================================================
-   ABOUT NAME
-========================================================= */
-
-.main-name {
-
-    font-family:
-        "Saira Extra Condensed",
-        sans-serif;
-
-    font-size: 6rem;
-
-    font-weight: 700;
-
-    line-height: 0.95;
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 
     margin-top: 0;
 
     margin-bottom: 0.5rem;
-}
-
-
-.name-dark {
-
-    color: #343a40;
-}
-
-
-.name-blue {
-
-    color: rgb(169, 183, 222);
-}
-
-
-
-/* =========================================================
-   ABOUT EMAIL
-========================================================= */
-
-.about-email {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 0.45rem;
 
     font-family:
         "Saira Extra Condensed",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
         sans-serif;
-
-    font-size: 1.5rem;
-
-    margin-bottom: 3.5rem;
-}
-
-
-.about-email i {
-
-    color: #6c757d;
-}
-
-
-.about-email a {
-
-    color: #6c757d;
-}
-
-
-
-/* =========================================================
-   ABOUT DESCRIPTION
-========================================================= */
-
-.about-description {
-
-    max-width: 72rem;
-
-    font-size: 1.1rem;
-
-    line-height: 1.7;
-}
-
-
-.about-description p {
-
-    margin-top: 0;
-
-    margin-bottom: 2rem;
-}
-
-
-
-/* =========================================================
-   SOCIAL ICONS
-========================================================= */
-
-.social-icons {
-
-    display: flex;
-
-    gap: 1.5rem;
-
-    margin-top: 2.5rem;
-}
-
-
-.social-icons a {
-
-    width: 4rem;
-
-    height: 4rem;
-
-    border-radius: 50%;
-
-    background-color: #495057;
-
-    color: #ffffff;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 1.4rem;
-
-    transition:
-        background-color 0.2s ease,
-        transform 0.2s ease;
-}
-
-
-.social-icons a:hover {
-
-    background-color:
-        rgb(169, 183, 222);
-
-    transform:
-        translateY(-2px);
-}
-
-
-
-/* =========================================================
-   RESUME ITEM STRUCTURE
-========================================================= */
-
-.resume-item {
-
-    display: flex;
-
-    flex-direction: row;
-
-    justify-content: space-between;
-
-    width: 100%;
-
-    margin-bottom: 3rem;
-}
-
-
-.resume-item:last-child {
-
-    margin-bottom: 0;
-}
-
-
-.resume-item-main {
-
-    flex-grow: 1;
-
-    max-width: 58rem;
-}
-
-
-
-/* =========================================================
-   UNIVERSITY / PROJECT / RESEARCH TITLES
-========================================================= */
-
-.resume-item-main h3 {
-
-    font-family:
-        "Saira Extra Condensed",
-        sans-serif;
-
-    font-size: 2rem;
 
     font-weight: 700;
 
     line-height: 1.2;
 
-    color: #343a40;
+    color:
+        var(--portfolio-dark);
 
-    margin-top: 0;
-
-    margin-bottom: 0;
 }
 
 
+h1 {
 
-/* =========================================================
-   SUBHEADING
+    font-size:
+        calc(1.725rem + 5.7vw);
 
-   Bachelor of Science, Processor Design, etc.
-========================================================= */
+}
+
+
+h2 {
+
+    font-size:
+        calc(1.475rem + 2.7vw);
+
+}
+
+
+h3 {
+
+    font-size:
+        calc(1.325rem + 0.9vw);
+
+}
+
+
+h4 {
+
+    font-size:
+        calc(1.275rem + 0.3vw);
+
+}
+
+
+p {
+
+    margin-top: 0;
+
+    margin-bottom: 1rem;
+
+}
+
+
+.lead {
+
+    font-size: 1.15rem;
+
+    font-weight: 400;
+
+}
+
 
 .subheading {
 
     font-family:
         "Saira Extra Condensed",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
         sans-serif;
-
-    font-size: 1.5rem;
 
     font-weight: 500;
 
-    line-height: 1.2;
+    font-size: 1.5rem;
 
-    color: #6c757d;
-
-    margin-top: 0;
-
-    margin-bottom: 1rem;
 }
 
 
 
-/* =========================================================
-   DETAILS
-========================================================= */
+/* ==========================================================
+   PRIMARY COLOR
+========================================================== */
 
-.detail-block {
-
-    font-family:
-        "Muli",
-        sans-serif;
-
-    font-size: 1rem;
-
-    font-weight: 400;
-
-    line-height: 1.5;
-
-    color: #6c757d;
-}
-
-
-.detail-block p {
-
-    margin-top: 0;
-
-    margin-bottom: 0.5rem;
-}
-
-
-
-/* =========================================================
-   RIGHT-SIDE DATES
-========================================================= */
-
-.resume-date {
-
-    flex-shrink: 0;
-
-    padding-left: 2rem;
-
-    padding-top: 0.15rem;
+.text-primary-custom {
 
     color:
-        rgb(169, 183, 222);
+        var(--portfolio-blue) !important;
 
-    font-family:
-        "Muli",
-        sans-serif;
-
-    font-size: 1rem;
-
-    font-weight: 400;
-
-    white-space: nowrap;
-
-    text-align: right;
 }
 
 
 
-/* =========================================================
-   PROJECT LINKS
-========================================================= */
+/* ==========================================================
+   SIDE NAVIGATION
+========================================================== */
 
-.text-link {
+#sideNav {
 
-    display: inline-block;
+    background-color:
+        var(--portfolio-blue);
 
-    margin-top: 0.5rem;
-
-    color:
-        rgb(140, 158, 207);
-
-    font-weight: 800;
 }
 
 
-.text-link:hover {
-
-    text-decoration: underline;
-}
-
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-.contact-row {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 1.25rem;
-
-    margin-bottom: 2rem;
-}
-
-
-.contact-row > i {
-
-    width: 3.3rem;
-
-    height: 3.3rem;
-
-    border-radius: 50%;
-
-    background-color: #495057;
-
-    color: #ffffff;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 1.2rem;
-
-    flex-shrink: 0;
-}
-
-
-.contact-row h3 {
+#sideNav .navbar-brand {
 
     font-family:
         "Saira Extra Condensed",
         sans-serif;
 
-    color: #343a40;
+    font-size: 1.5rem;
 
-    font-size: 1.7rem;
-
-    line-height: 1.1;
-
-    margin-top: 0;
-
-    margin-bottom: 0.15rem;
 }
 
 
-.contact-row a {
+#sideNav .navbar-nav .nav-item .nav-link {
 
-    color: #6c757d;
+    font-weight: 800;
 
-    font-size: 1rem;
+    letter-spacing: 0.05rem;
+
+    text-transform: uppercase;
+
+    color:
+        rgba(255, 255, 255, 0.68);
+
 }
 
 
-.contact-row a:hover {
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link:focus {
 
-    text-decoration: underline;
+    color:
+        rgba(255, 255, 255, 1);
+
+}
+
+
+#sideNav .navbar-toggler {
+
+    border-color:
+        rgba(255, 255, 255, 0.45);
+
 }
 
 
 
-/* =========================================================
-   LARGE SCREEN
+/* ==========================================================
+   PROFILE PHOTO
+========================================================== */
 
-   Keep content similar to reference rather than stretching
-   across the entire monitor.
-========================================================= */
+#sideNav .img-profile {
 
-@media (min-width: 1200px) {
+    width: 10rem;
 
-    .resume-section {
+    height: 10rem;
 
-        max-width: none;
+    object-fit: cover;
+
+    object-position: center;
+
+    border:
+        0.5rem solid
+        rgba(255, 255, 255, 0.22);
+
+}
+
+
+
+/* ==========================================================
+   FULL PAGE SECTIONS
+========================================================== */
+
+section.resume-section {
+
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 5rem;
+
+    padding-bottom: 5rem;
+
+    padding-left: 1rem;
+
+    padding-right: 1rem;
+
+    max-width: 75rem;
+
+}
+
+
+section.resume-section
+.resume-section-content {
+
+    width: 100%;
+
+}
+
+
+
+/* ==========================================================
+   DIVIDERS
+========================================================== */
+
+hr {
+
+    color:
+        inherit;
+
+    background-color:
+        currentColor;
+
+    border: 0;
+
+    opacity: 0.25;
+
+}
+
+
+hr:not([size]) {
+
+    height: 1px;
+
+}
+
+
+
+/* ==========================================================
+   SOCIAL ICONS
+========================================================== */
+
+.social-icons
+.social-icon {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 3.5rem;
+
+    width: 3.5rem;
+
+    background-color:
+        #495057;
+
+    color:
+        #ffffff;
+
+    border-radius: 100%;
+
+    font-size: 1.5rem;
+
+    margin-right: 1.5rem;
+
+    transition:
+        background-color 0.15s ease-in-out;
+
+}
+
+
+.social-icons
+.social-icon:hover {
+
+    background-color:
+        var(--portfolio-blue);
+
+    color:
+        #ffffff;
+
+}
+
+
+
+/* ==========================================================
+   PROJECT LINKS
+========================================================== */
+
+.project-link {
+
+    font-weight: 800;
+
+}
+
+
+.project-link:hover {
+
+    color:
+        #6579ad;
+
+}
+
+
+
+/* ==========================================================
+   CONTACT
+========================================================== */
+
+.contact-entry a {
+
+    font-size: 1.05rem;
+
+}
+
+
+
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+
+@media
+(min-width: 1200px) {
+
+
+    h1 {
+
+        font-size: 6rem;
+
+    }
+
+
+    h2 {
+
+        font-size: 3.5rem;
+
+    }
+
+
+    h3 {
+
+        font-size: 2rem;
+
+    }
+
+
+    h4 {
+
+        font-size: 1.5rem;
+
     }
 
 }
 
 
 
-/* =========================================================
-   TABLET / MOBILE
-========================================================= */
+/* ==========================================================
+   TABLET AND ABOVE
+========================================================== */
 
-@media (max-width: 991px) {
+@media
+(min-width: 768px) {
 
 
-    .sidebar {
+    section.resume-section {
 
-        position: relative;
+        min-height: 100vh;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   DESKTOP SIDEBAR
+========================================================== */
+
+@media
+(min-width: 992px) {
+
+
+    body {
+
+        padding-top: 0;
+
+        padding-left: 17rem;
+
+    }
+
+
+
+    #sideNav {
+
+        padding-left: 0;
+
+        padding-right: 0;
+
+        text-align: center;
+
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        display: flex;
+
+        flex-direction: column;
+
+        width: 17rem;
+
+        height: 100vh;
+
+    }
+
+
+
+    #sideNav
+    .navbar-brand {
+
+        display: flex;
+
+        margin: auto auto 0;
+
+        padding: 0.5rem;
+
+    }
+
+
+
+    #sideNav
+    .navbar-brand
+    .img-profile {
+
+        max-width: 10rem;
+
+        max-height: 10rem;
+
+    }
+
+
+
+    #sideNav
+    .navbar-collapse {
+
+        display: flex !important;
+
+        align-items: flex-start;
+
+        flex-grow: 0;
 
         width: 100%;
 
-        height: auto;
+        margin-bottom: auto;
 
-        padding: 1.5rem;
     }
 
 
-    .profile-container {
 
-        width: 9rem;
+    #sideNav
+    .navbar-collapse
+    .navbar-nav {
 
-        height: 9rem;
-
-        margin-bottom: 1.25rem;
-    }
-
-
-    .nav-links {
-
-        flex-direction: row;
-
-        justify-content: center;
-
-        flex-wrap: wrap;
-
-        gap: 0.25rem 1rem;
-    }
-
-
-    .nav-links a {
-
-        font-size: 0.8rem;
-    }
-
-
-    .main-content {
-
-        margin-left: 0;
+        flex-direction: column;
 
         width: 100%;
+
     }
 
 
-    .resume-section {
 
-        min-height: auto;
+    #sideNav
+    .navbar-collapse
+    .navbar-nav
+    .nav-item {
+
+        display: block;
+
+    }
+
+
+
+    #sideNav
+    .navbar-collapse
+    .navbar-nav
+    .nav-item
+    .nav-link {
+
+        display: block;
+
+        padding:
+            0.45rem 1rem;
+
+    }
+
+
+
+    section.resume-section {
+
+        padding-left: 3rem;
+
+        padding-right: 3rem;
 
         padding-top: 5rem;
 
         padding-bottom: 5rem;
 
-        padding-left: 2rem;
-
-        padding-right: 2rem;
-    }
-
-
-    .main-name {
-
-        font-size: 4.5rem;
     }
 
 }
 
 
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
+/* ==========================================================
+   MOBILE
+========================================================== */
 
-@media (max-width: 767px) {
+@media
+(max-width: 991.98px) {
 
 
-    .resume-section {
+    #sideNav {
 
-        padding-left: 1rem;
+        min-height: 3.375rem;
 
-        padding-right: 1rem;
     }
 
 
-    .section-heading {
+    #sideNav
+    .navbar-brand {
+
+        padding-top: 0;
+
+        padding-bottom: 0;
+
+    }
+
+
+    section.resume-section {
+
+        padding-top: 5rem;
+
+        padding-bottom: 5rem;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media
+(max-width: 767.98px) {
+
+
+    h1 {
+
+        font-size: 4rem;
+
+    }
+
+
+    h2 {
 
         font-size: 3rem;
 
-        margin-bottom: 3rem;
     }
 
 
-    .resume-item {
-
-        flex-direction: column;
-    }
-
-
-    .resume-date {
-
-        padding-left: 0;
-
-        padding-top: 1rem;
-
-        text-align: left;
-    }
-
-
-    .resume-item-main h3 {
+    h3 {
 
         font-size: 1.8rem;
+
     }
 
 
     .subheading {
 
-        font-size: 1.35rem;
-    }
-
-
-    .main-name {
-
-        font-size: 3.8rem;
-    }
-
-
-    .name-dark,
-    .name-blue {
-
-        display: block;
-    }
-
-
-    .about-email {
-
         font-size: 1.3rem;
 
-        margin-bottom: 2.5rem;
+    }
+
+
+    .lead {
+
+        font-size: 1rem;
+
     }
 
 }
